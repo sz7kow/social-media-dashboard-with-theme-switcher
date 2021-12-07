@@ -13,6 +13,7 @@ html[data-theme="light"] {
   --color-text-secondary: #{$color-dark-electric-blue};
 }
 
+html,
 html[data-theme="dark"] {
   --background-body: #{$color-dark-gunmetal};
   --background-body-decorator: #{$color-dark-gunmetal-2};
