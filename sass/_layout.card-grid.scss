@@ -1,0 +1,22 @@
+.l-card-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 1.5rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &--medium {
+    grid-auto-rows: 7.8125rem;
+  }
+
+  &--large {
+    grid-auto-rows: 13.5rem;
+  }
+}

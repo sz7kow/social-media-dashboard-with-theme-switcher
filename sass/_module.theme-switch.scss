@@ -1,0 +1,49 @@
+.m-theme-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.m-theme-switch__label {
+  font: 700 0.875rem/1.0625rem $font-family;
+  color: var(--color-text-secondary);
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-right: 0.8125rem;
+  }
+}
+
+.m-theme-switch__input {
+  position: relative;
+  display: block;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: $color-cadet-blue;
+  appearance: none;
+
+  &:checked {
+    background: linear-gradient(225deg, $color-ufo-green 0%, $color-bleu-de-france 98.02%);
+
+    &::before {
+      background-color: $color-charcoal;
+      transform: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    background-color: $color-anti-flash-white;
+    transform: translateX(1.5rem);
+    transition: color $transition-duration $transition-timing-function,
+      background-color $transition-duration $transition-timing-function,
+      transform $transition-duration $transition-timing-function;
+  }
+}

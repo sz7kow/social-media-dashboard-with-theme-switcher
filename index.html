@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Social Media Dashboard" />
+    <link href="./css/styles.min.css" rel="stylesheet" />
+    <link href="./images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Social media dashboard with theme switcher</title>
+  </head>
+  <body>
+    <div class="l-container">
+      <header class="m-header">
+        <div>
+          <h1 class="m-header__heading">Social Media Dashboard</h1>
+          <p class="m-header__followers">Total Followers: 23,004</p>
+        </div>
+        <div class="m-header__separator" role="separator"></div>
+        <div class="m-theme-switch">
+          <label class="m-theme-switch__label" for="theme-switch">Dark Mode</label>
+          <input class="m-theme-switch__input" type="checkbox" name="theme" id="theme-switch" />
+        </div>
+      </header>
+      <main class="m-main">
+        <ul class="l-card-grid l-card-grid--large">
+          <li class="m-card m-card--column">
+            <div class="m-card__profile">
+              <img alt="Facebook Logo" src="./svgs/icon-facebook.svg" class="m-card__profile-icon" />
+              <p class="m-card__user">@nathanf</p>
+            </div>
+            <p class="m-card__stat-value m-card__stat-value--large">1987</p>
+            <p class="m-card__stat-label m-card__stat-label--large">Followers</p>
+            <p class="m-card__stat-change m-card__stat-change--positive">12 Today</p>
+          </li>
+          <li class="m-card m-card--column">
+            <div class="m-card__profile">
+              <img alt="Twitter Logo" src="./svgs/icon-twitter.svg" class="m-card__profile-icon" />
+              <p class="m-card__user">@nathanf</p>
+            </div>
+            <p class="m-card__stat-value m-card__stat-value--large">1044</p>
+            <p class="m-card__stat-label m-card__stat-label--large">Followers</p>
+            <p class="m-card__stat-change m-card__stat-change--positive">99 Today</p>
+          </li>
+          <li class="m-card m-card--column">
+            <div class="m-card__profile">
+              <img alt="Instagram Logo" src="./svgs/icon-instagram.svg" class="m-card__profile-icon" />
+              <p class="m-card__user">@realnathanf</p>
+            </div>
+            <p class="m-card__stat-value m-card__stat-value--large">11k</p>
+            <p class="m-card__stat-label m-card__stat-label--large">Followers</p>
+            <p class="m-card__stat-change m-card__stat-change--positive">1099 Today</p>
+          </li>
+          <li class="m-card m-card--column">
+            <div class="m-card__profile">
+              <img alt="Youtube Logo" src="./svgs/icon-youtube.svg" class="m-card__profile-icon" />
+              <p class="m-card__user">Nathan F.</p>
+            </div>
+            <p class="m-card__stat-value m-card__stat-value--large">8239</p>
+            <p class="m-card__stat-label m-card__stat-label--large">Subscribers</p>
+            <p class="m-card__stat-change m-card__stat-change--negative">144 Today</p>
+          </li>
+        </ul>
+        <h2 class="m-main__heading">Overview - Today</h2>
+        <ul class="l-card-grid l-card-grid--medium">
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Page Views</p>
+            <img alt="Facebook Logo" src="./svgs/icon-facebook.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">87</p>
+            <p class="m-card__stat-change m-card__stat-change--positive m-card__stat-change--percentage">3</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Likes</p>
+            <img alt="Facebook Logo" src="./svgs/icon-facebook.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">52</p>
+            <p class="m-card__stat-change m-card__stat-change--negative m-card__stat-change--percentage">2</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Likes</p>
+            <img alt="Instagram Logo" src="./svgs/icon-instagram.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">5462</p>
+            <p class="m-card__stat-change m-card__stat-change--positive m-card__stat-change--percentage">2257</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Profile Views</p>
+            <img alt="Instagram Logo" src="./svgs/icon-instagram.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">52k</p>
+            <p class="m-card__stat-change m-card__stat-change--positive m-card__stat-change--percentage">1375</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Retweets</p>
+            <img alt="Twitter Logo" src="./svgs/icon-twitter.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">117</p>
+            <p class="m-card__stat-change m-card__stat-change--positive m-card__stat-change--percentage">303</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Likes</p>
+            <img alt="Twitter Logo" src="./svgs/icon-twitter.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">507</p>
+            <p class="m-card__stat-change m-card__stat-change--positive m-card__stat-change--percentage">553</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Likes</p>
+            <img alt="Youtube Logo" src="./svgs/icon-youtube.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">107</p>
+            <p class="m-card__stat-change m-card__stat-change--negative m-card__stat-change--percentage">19</p>
+          </li>
+          <li class="m-card m-card--spread">
+            <p class="m-card__stat-label m-card__stat-label--medium">Total Views</p>
+            <img alt="Youtube Logo" src="./svgs/icon-youtube.svg" />
+            <p class="m-card__stat-value m-card__stat-value--medium">1407</p>
+            <p class="m-card__stat-change m-card__stat-change--negative m-card__stat-change--percentage">12</p>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

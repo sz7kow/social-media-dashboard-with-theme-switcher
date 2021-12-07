@@ -1,0 +1,24 @@
+html {
+  --color-positive: #{$color-jungle-green};
+  --color-negative: #{$color-jasper};
+}
+
+html[data-theme="light"] {
+  --background-body: #{$color-white};
+  --background-body-decorator: #{$color-ghost-white};
+  --background-card: #{$color-anti-flash-white};
+  --background-card-hover: #{$color-azureish-white};
+  --background-separator: #{$color-cool-gray};
+  --color-text-primary: #{$color-dark-gunmetal};
+  --color-text-secondary: #{$color-dark-electric-blue};
+}
+
+html[data-theme="dark"] {
+  --background-body: #{$color-dark-gunmetal};
+  --background-body-decorator: #{$color-dark-gunmetal-2};
+  --background-card: #{$color-yankees-blue};
+  --background-card-hover: #{$color-charcoal};
+  --background-separator: #{$color-charcoal};
+  --color-text-primary: #{$color-white};
+  --color-text-secondary: #{$color-ceil};
+}

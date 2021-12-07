@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: color $transition-duration $transition-timing-function,
+    background-color $transition-duration $transition-timing-function;
+}
+
+body {
+  position: relative;
+  background-color: var(--background-body);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 14.6875rem;
+    border-radius: 0px 0px 1.25rem 1.25rem;
+    background-color: var(--background-body-decorator);
+    transition: background-color $transition-duration $transition-timing-function;
+  }
+
+  & * {
+    z-index: 2;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}

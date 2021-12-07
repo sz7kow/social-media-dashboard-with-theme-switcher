@@ -1,0 +1,13 @@
+.l-container {
+  width: 100%;
+  max-width: 23.4375rem;
+  margin: 0 auto;
+  padding: 0 1.53125rem;
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 33.5625rem;
+    padding: 0;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 69.375rem;
+  }
+}

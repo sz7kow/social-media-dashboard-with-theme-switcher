@@ -1,0 +1,41 @@
+.m-header {
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem 0 2.5rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2.875rem;
+  }
+}
+
+.m-header__heading {
+  font: 700 1.5rem/1.8125rem $font-family;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-primary);
+
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    margin-bottom: 0.1875rem;
+  }
+}
+
+.m-header__followers {
+  font: 700 0.875rem/1.0625rem $font-family;
+  color: var(--color-text-secondary);
+}
+
+.m-header__separator {
+  display: block;
+  width: 100%;
+  height: 0.0625rem;
+  margin: 1.5rem 0 1rem;
+  background-color: var(--background-separator);
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
