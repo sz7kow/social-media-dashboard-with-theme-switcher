@@ -22,16 +22,12 @@
   border-radius: 0.75rem;
   background-color: $color-cadet-blue;
   appearance: none;
+  transition: none;
 
-  &:checked {
+  &:checked,
+  &:hover {
     background: linear-gradient(225deg, $color-ufo-green 0%, $color-bleu-de-france 98.02%);
-
-    &::before {
-      background-color: $color-charcoal;
-      transform: none;
-    }
   }
-
   &::before {
     content: "";
     position: absolute;
@@ -45,5 +41,12 @@
     transition: color $transition-duration $transition-timing-function,
       background-color $transition-duration $transition-timing-function,
       transform $transition-duration $transition-timing-function;
+  }
+  &:checked::before {
+    background-color: $color-yankees-blue;
+    transform: none;
+  }
+  &:checked:hover::before {
+    background-color: $color-charcoal;
   }
 }
